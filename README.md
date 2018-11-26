@@ -1,7 +1,7 @@
 # vue-magnifying-glass
 
 放大镜vue组件。  
-可修改图片地址magSrc  
+可修改图片地址magSrc.  
 图片，遮罩，放大区域的参数为mag:  
 mag:{  
     imgWidth:346,  
