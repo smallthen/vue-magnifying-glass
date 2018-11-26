@@ -23,7 +23,6 @@
           markWidth:173,
           markHeight:196,
           bigWidth:692,
-          bigHeight:784,
         }
       }
     },
