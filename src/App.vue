@@ -4,10 +4,11 @@
   </div>
 </template>
 
-<script>
+<script lang="ts">
+  import Vue from 'vue'
   import Mag from '@/components/mag'
 
-export default {
+export default Vue.extend({
   name: 'App',
   components:{
     Mag
@@ -23,7 +24,7 @@ export default {
       }
     }
   }
-}
+})
 </script>
 
 <style>

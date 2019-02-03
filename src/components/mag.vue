@@ -8,9 +8,14 @@
   </div>
 </template>
 
-<script>
-  import avatar from '@/assets/logo.png'
-  export default {
+<script lang="ts">
+  import Vue from 'vue'
+  // import avatar from '@/assets/logo.png'
+
+  // declare function require(string):string;
+  const avatar=require('@/assets/logo.png');
+
+  export default Vue.extend({
     name: 'mag',
     props:{
       magSrc:{
@@ -57,18 +62,19 @@
       enter(){
         this.mouseOn=true;
       },
-      move(e){
-        let imgWidth=this.mag.imgWidth;
-        let imgHeight=this.mag.imgHeight;
-        let markWidth=this.mag.markWidth;
-        let markHeight=this.mag.markHeight;
-        let bigWidth=this.mag.bigWidth;
-        let bigHeight=bigWidth*markHeight/markWidth;
-        let demo=this.demo;
-        let small=this.small;
-        let mark=this.mark;
-        let big=this.big;
-        let bigImg=this.bigImg;
+      move(e:any){
+        let imgWidth:number=this.mag.imgWidth;
+        let imgHeight:number=this.mag.imgHeight;
+        let markWidth:number=this.mag.markWidth;
+        let markHeight:number=this.mag.markHeight;
+        let bigWidth:number=this.mag.bigWidth;
+        let bigHeight:number=bigWidth*markHeight/markWidth;
+        let demo:any=this.demo;
+        let small:any=this.small;
+        let mark:any=this.mark;
+        let big:any=this.big;
+        let bigImg:any=this.bigImg;
+
 
         small.style.width=imgWidth+'px';
         small.style.height=imgHeight+'px';
@@ -83,11 +89,11 @@
         bigImg.style.width=bigWidth*imgWidth/markWidth+'px';
         bigImg.style.height=bigHeight*imgHeight/markHeight+'px';
 
-        let left=e.clientX
+        let left:number=e.clientX
           -demo.offsetLeft
           -small.offsetLeft
           -markWidth/2;
-        let top=e.clientY-demo.offsetTop-small.offsetTop-markHeight/2;
+        let top:number=e.clientY-demo.offsetTop-small.offsetTop-markHeight/2;
         if(left<0){left=0};
         if(top<0){top=0};
         if(left>imgWidth-markWidth){
@@ -106,7 +112,7 @@
         this.mouseOn=false;
       }
     }
-  }
+  })
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
