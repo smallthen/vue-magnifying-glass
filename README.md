@@ -1,14 +1,10 @@
 ```
+vue放大镜组件
+
 npm i vue-magnifying-glass
-```
-  
-```
     <div>
         <Mag :mag="mag"> </Mag>
     </div>
-```
-
-```
 import Vue from 'vue'
 import Mag from '../plugin/vue-glass.js'
 Vue.use(Mag)
