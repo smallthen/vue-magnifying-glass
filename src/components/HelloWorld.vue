@@ -18,13 +18,10 @@ export default {
               markHeight:100,  //遮罩高度
               bigWidth:500,   //大图的宽度
             },
-            // magSrc:avatar
+            // magSrc:''
         }
     },
     components: {
     },
 }
 </script>
-
-<style>
-</style>

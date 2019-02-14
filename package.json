@@ -1,9 +1,8 @@
 {
-  "name": "vue-glass",
-  "version": "1.0.0",
-  "description": "A Vue.js project",
+  "name": "vue-magnifying-glass",
+  "version": "0.0.1",
+  "description": "A Vue.js project,magnifying-glass",
   "author": "zhaowendao <244636432@qq.com>",
-  "private": true,
   "scripts": {
     "dev": "webpack-dev-server --inline --progress --config build/webpack.dev.conf.js",
     "start": "npm run dev",
@@ -17,7 +16,11 @@
     "vue": "^2.5.2",
     "vue-router": "^3.0.1"
   },
-  "main":"dist/vue-glass.js",
+  "main":"dist/vue-magnifying-glass.js",
+  "repository":{
+    "type":"git",
+    "url":"https://github.com/smallthen/vue-magnifying-glass"
+  },
   "devDependencies": {
     "autoprefixer": "^7.1.2",
     "babel-core": "^6.22.1",

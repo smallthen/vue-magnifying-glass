@@ -2,11 +2,11 @@
 	if(typeof exports === 'object' && typeof module === 'object')
 		module.exports = factory();
 	else if(typeof define === 'function' && define.amd)
-		define("vueMagnifyingGlass", [], factory);
+		define("vue-magnifying-glass", [], factory);
 	else if(typeof exports === 'object')
-		exports["vueMagnifyingGlass"] = factory();
+		exports["vue-magnifying-glass"] = factory();
 	else
-		root["vueMagnifyingGlass"] = factory();
+		root["vue-magnifying-glass"] = factory();
 })(typeof self !== 'undefined' ? self : this, function() {
 return /******/ (function(modules) { // webpackBootstrap
 /******/ 	// The module cache
