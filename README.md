@@ -1,30 +1,30 @@
-# vue-glass
+npm i vue-magnifying-glass
 
-> A Vue.js project
+<template>
+    <div>
+        <Mag :mag="mag"> </Mag>
+    </div>
+</template>
 
-## Build Setup
+<script>
+import Vue from 'vue'
+import Mag from '../plugin/vue-glass.js'
+Vue.use(Mag)
+export default {
+    data () {
+        return {
+            mag:{
+              imgWidth:250,   //图片宽度
+              imgHeight:300,  //图片高度
+              markWidth:100,  //遮罩宽度
+              markHeight:100,  //遮罩高度
+              bigWidth:500,   //大图的宽度
+            },
+              // magSrc:''    //图片地址
+        }
+    },
+    components: {
+    },
+}
+</script>
 
-``` bash
-# install dependencies
-npm install
-
-# serve with hot reload at localhost:8080
-npm run dev
-
-# build for production with minification
-npm run build
-
-# build for production and view the bundle analyzer report
-npm run build --report
-
-# run unit tests
-npm run unit
-
-# run e2e tests
-npm run e2e
-
-# run all tests
-npm test
-```
-
-For a detailed explanation on how things work, check out the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
