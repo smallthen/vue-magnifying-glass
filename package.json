@@ -1,6 +1,6 @@
 {
   "name": "vue-magnifying-glass",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "A Vue.js project,magnifying-glass",
   "author": "zhaowendao <244636432@qq.com>",
   "scripts": {
@@ -8,18 +8,20 @@
     "start": "npm run dev",
     "unit": "jest --config test/unit/jest.conf.js --coverage",
     "e2e": "node test/e2e/runner.js",
-    "test": "npm run unit && npm run e2e",
+    "test1": "npm run unit && npm run e2e",
+    "test": "mocha",
     "build": "node build/build.js",
-    "dist":"webpack --config build/webpack.dist.config.js"
+    "dist": "webpack --config build/webpack.dist.config.js"
   },
   "dependencies": {
+    "https-proxy-agent": "^2.2.0",
     "vue": "^2.5.2",
     "vue-router": "^3.0.1"
   },
-  "main":"dist/vue-magnifying-glass.js",
-  "repository":{
-    "type":"git",
-    "url":"https://github.com/smallthen/vue-magnifying-glass"
+  "main": "dist/vue-magnifying-glass.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/smallthen/vue-magnifying-glass"
   },
   "devDependencies": {
     "autoprefixer": "^7.1.2",
@@ -66,7 +68,7 @@
     "vue-template-compiler": "^2.5.2",
     "webpack": "^3.6.0",
     "webpack-bundle-analyzer": "^2.9.0",
-    "webpack-dev-server": "^2.9.1",
+    "webpack-dev-server": "^3.1.11",
     "webpack-merge": "^4.1.0"
   },
   "engines": {
