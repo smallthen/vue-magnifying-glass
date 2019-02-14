@@ -1,18 +1,5 @@
-<<<<<<< HEAD
-# vue-glass
-
-> A Vue.js project
-
-## Build Setup
-
-``` bash
-=======
-
 vue放大镜组件
 ------
-
-
->>>>>>> fa11f068124d74387830b50c234be6c46ac07813
 npm i vue-magnifying-glass
 ------
 
@@ -42,9 +29,3 @@ export default {
     }
 }
 ```
-
-
-
-```
-
-For a detailed explanation on how things work, check out the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
