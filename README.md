@@ -1,13 +1,30 @@
-# vue-magnifying-glass
+# vue-glass
 
-放大镜vue组件。  
-可修改图片地址magSrc.  
-图片，遮罩，放大区域的参数为mag:  
-mag:{  
-    imgWidth:346,  
-    imgHeight:392,  
-    markWidth:173,  
-    markHeight:196,  
-    bigWidth:692,  
-  }  
- 大图的高度根据其他数据生成。  
+> A Vue.js project
+
+## Build Setup
+
+``` bash
+# install dependencies
+npm install
+
+# serve with hot reload at localhost:8080
+npm run dev
+
+# build for production with minification
+npm run build
+
+# build for production and view the bundle analyzer report
+npm run build --report
+
+# run unit tests
+npm run unit
+
+# run e2e tests
+npm run e2e
+
+# run all tests
+npm test
+```
+
+For a detailed explanation on how things work, check out the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
