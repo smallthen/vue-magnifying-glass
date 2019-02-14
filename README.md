@@ -29,9 +29,7 @@ export default {
             },
               // magSrc:''    //图片地址
         }
-    },
-    components: {
-    },
+    }
 }
 ```
 
