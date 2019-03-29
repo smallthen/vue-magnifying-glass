@@ -11,7 +11,7 @@ npm i vue-magnifying-glass
 </template>
 
 import Vue from 'vue'
-import Mag from '../plugin/vue-glass.js'
+import Mag from 'vue-magnifying-glass'
 Vue.use(Mag)
 
 export default {
