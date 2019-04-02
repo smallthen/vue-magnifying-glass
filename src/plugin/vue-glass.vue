@@ -27,7 +27,7 @@
           v-show="mouseOn"
           alt=""
           class="bigImg"
-          :style="{width:mag.bigWidth*mag.imgWidth/mag.markWidth+'px',height:bigHeight*mag.imgHeight/mag.markHeight+ 'px',left:bigImgLeft+'px',top:bigImgTop+'px'}"
+          :style="imgStyle"
         >
       </div>
     </div>
@@ -68,6 +68,16 @@ export default {
     this.basic();
   },
   computed: {
+    imgStyle() {
+      return {
+        width:
+          (this.mag.bigWidth * this.mag.imgWidth) / this.mag.markWidth + "px",
+        height:
+          (this.bigHeight * this.mag.imgHeight) / this.mag.markHeight + "px",
+        left: this.bigImgLeft + "px",
+        top:  this.bigImgTop + "px"
+      };
+    },
     demo() {
       return document.querySelector(".demo");
     },
@@ -92,12 +102,12 @@ export default {
       this.mouseOn = true;
     },
     move(e) {
-      let markWidth = this.mag.markWidth;
-      let markHeight = this.mag.markHeight;
-      let demo = this.demo;
-      let small = this.small;
-      let mark = this.mark;
-      let bigImg = this.bigImg;
+      const markWidth = this.mag.markWidth;
+      const markHeight = this.mag.markHeight;
+      const demo = this.demo;
+      const small = this.small;
+      const mark = this.mark;
+      const bigImg = this.bigImg;
       let left = e.clientX - getOffsetRect(demo).left - markWidth / 2;
       let top = e.clientY - getOffsetRect(demo).top - markHeight / 2;
       if (left < 0) {
