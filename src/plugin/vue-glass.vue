@@ -127,8 +127,8 @@ export default {
       this.bigImgTop =
         (-mark.offsetTop * this.bigImg.offsetHeight) / this.mag.imgHeight;
       function getOffsetRect(ele) {
-        let box = ele.getBoundingClientRect();
-        let body = document.body,
+        const box = ele.getBoundingClientRect();
+        const body = document.body,
           docElem = document.documentElement;
         let scrollTop =
             window.pageYOffset || docElem.scrollTop || body.scrollTop,
